@@ -1,0 +1,54 @@
+/* AuthPages.css */
+
+/* Full page background */
+.auth-background {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('./background.jpg'); /* put your image in src/Pages/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form card */
+.auth-card {
+  background-color: rgba(255, 255, 255, 0.9); /* semi-transparent */
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Form elements */
+.auth-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 26px;
+}
+
+.auth-card input,
+.auth-card button {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.auth-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-card button:hover {
+  background-color: #0056b3;
+}

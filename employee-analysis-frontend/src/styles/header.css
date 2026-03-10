@@ -1,0 +1,14 @@
+.header {
+  height: 60px;
+  background: #f1f5f9;
+  margin-left: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header .profile span {
+  font-weight: 500;
+}

@@ -1,0 +1,115 @@
+/* Auth.css */
+
+/* Full-page background */
+.auth-container {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('./background.jpg'); /* Place your image in src/Pages/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form card */
+.auth-card {
+  background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Card header */
+.auth-card h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Labels */
+.auth-card label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Inputs and selects */
+.auth-card input,
+.auth-card select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.auth-card input:focus,
+.auth-card select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button */
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Switch link */
+.auth-switch {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.auth-switch span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.auth-switch span:hover {
+  text-decoration: underline;
+}
+
+/* Error message */
+.auth-card p {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .auth-card {
+    padding: 30px 20px;
+  }
+}

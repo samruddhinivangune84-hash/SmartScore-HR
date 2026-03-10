@@ -1,0 +1,228 @@
+/* =========================
+   Card Layout
+========================= */
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   Forms
+========================= */
+
+.form input,
+.form textarea,
+.filter-card input,
+.filter-card select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+/* =========================
+   Filters
+========================= */
+
+.filter-card {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-card input,
+.filter-card select {
+  flex: 1;
+  min-width: 180px;
+}
+
+/* =========================
+   Table
+========================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #f8f9fa;
+  font-weight: 600;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+tr:hover {
+  background-color: #f5f7fa;
+}
+
+/* =========================
+   Status / Deadline
+========================= */
+
+.overdue {
+  color: #e53935;
+  font-weight: bold;
+}
+
+/* =========================
+   Action Buttons
+========================= */
+
+.a/* =========================
+   Action Buttons Inline
+========================= */
+/* =========================
+   Action Buttons Inline
+========================= */
+
+.action-buttons {
+  display: flex;
+  gap: 6px; /* space between buttons */
+  flex-wrap: nowrap; /* prevent wrapping to next line */
+  justify-content: flex-start;
+}
+
+.actions button {
+  white-space: nowrap; /* prevent text wrapping inside buttons */
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Optional: make table scrollable on smaller screens */
+.table-card table {
+  width: 100%;
+  table-layout: auto;
+  overflow-x: auto;
+  display: block;
+}
+
+/* Button colors (unchanged from your existing) */
+.complete-btn {
+  background-color: #28a745;
+  color: white;
+}
+.complete-btn:hover {
+  background-color: #1e7e34;
+}
+
+.edit-btn {
+  background-color: #ff9800;
+  color: white;
+}
+.edit-btn:hover {
+  background-color: #e68900;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+.delete-btn:hover {
+  background-color: #b02a37;
+}
+
+/* =========================
+   Statistics Cards
+========================= */
+
+.stats-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.stats-cards .card {
+  flex: 1;
+  min-width: 160px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.stats-cards h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.stats-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stats-overdue {
+  color: #e53935;
+}
+
+/* =========================
+   Chart Section
+========================= */
+
+.chart-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.chart-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Chart canvas */
+.chart-container canvas {
+  width: 100% !important;
+  max-height: 300px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+  .filter-card {
+    flex-direction: column;
+  }
+
+  .stats-cards {
+    flex-direction: column;
+  }
+
+}

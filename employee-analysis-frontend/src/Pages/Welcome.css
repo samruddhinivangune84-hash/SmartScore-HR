@@ -1,0 +1,94 @@
+/* Container and background image */
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./background.jpg'); /* Put your image in src/Pages */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Overlay for better readability */
+.welcome-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.welcome-card {
+  background: white;
+  padding: 60px 50px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+  max-width: 500px;
+  width: 90%;
+}
+
+.welcome-card h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.welcome-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 35px;
+}
+
+/* Buttons */
+.welcome-buttons button {
+  padding: 12px 25px;
+  margin: 0 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.welcome-buttons button:first-child {
+  background: #4a90e2;
+  color: white;
+}
+
+.welcome-buttons button:first-child:hover {
+  background: #357ab8;
+}
+
+.welcome-buttons button:last-child {
+  background: #50e3c2;
+  color: white;
+}
+
+.welcome-buttons button:last-child:hover {
+  background: #3bbfa6;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .welcome-card {
+    padding: 40px 30px;
+  }
+
+  .welcome-card h1 {
+    font-size: 24px;
+  }
+
+  .welcome-card p {
+    font-size: 14px;
+  }
+
+  .welcome-buttons button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
